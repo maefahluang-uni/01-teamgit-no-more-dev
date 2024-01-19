@@ -30,12 +30,16 @@ public class Counter {
 
 	// TODO: dev1- method for increment to closest even number
 	public void incrementToEven() {
-		_ctr = -99;
+		 if (_ctr % 2 != 0) {
+        _ctr++; // Increment to make it even
+    }
 	}
 
 	// TODO: dev1- method for decrement to closest even number
 	public void decrementToEven() {
-		_ctr = -99;
+
+        _ctr -= (_ctr %2 ==0)?2:1; // Decrement to make it even
+    
 	}
 
 	// TODO: dev2- method for increment to closest prime number
